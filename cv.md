@@ -50,3 +50,9 @@ All of my work can be viewed in the repository https://github.com/Shuvalovrus/pe
 [Основы HTML, CSS и веб-дизайна](https://ru.hexlet.io/courses/html) (completed)  
 [Основы Frontend-разработки](https://stc.innopolis.university/junior-frontend) (completed)  
 [JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/) (in process)
+
+## Languages
+**Russian:** Native  
+**English:** Intermediate / According to the online test at [EFset](https://www.efset.org/)
+
+![image](https://i.ibb.co/LgryPjC/result.png)
