@@ -44,3 +44,9 @@ return true;
 ```
 ## Work experience
 All of my work can be viewed in the repository https://github.com/Shuvalovrus/pet_project
+
+## Courses
+
+[Основы HTML, CSS и веб-дизайна](https://ru.hexlet.io/courses/html) (completed)  
+[Основы Frontend-разработки](https://stc.innopolis.university/junior-frontend) (completed)  
+[JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/) (in process)
