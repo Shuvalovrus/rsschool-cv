@@ -42,3 +42,5 @@ if (num === 2) {
 return true;
 }
 ```
+## Work experience
+All of my work can be viewed in the repository https://github.com/Shuvalovrus/pet_project
