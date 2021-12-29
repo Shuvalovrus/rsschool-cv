@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,8 @@
 }
 
 .section-title {
-
+    font-weight: 500;
+    color: #0D1117;
 }
 
 .header {
@@ -20,8 +21,8 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #fff;
     border-bottom: 1px solid #cccccc;
+    background-color: #fff;
 }
 
 .header__container {
@@ -50,8 +51,9 @@
     transition: .2s;
 }
 
-.navbar__link:hover {
-    opacity: .7;
+.navbar__link:hover,
+.contacts__link:hover {
+    color: #4D698F;
 }
 
 .about {
@@ -65,20 +67,119 @@
 }
 
 .about__photo {
-
+    position: relative;
+    top: -40px;
 }
-
 .about__text {
+    padding: 0;
+    margin: 0;
     max-width: 600px;
     line-height: 22px;
+    font-weight: 300;
+    color: #0D1117;
 }
+
 
 .contacts {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-weight: 300;
+}
+
+.contacts__item {
+    font-weight: 500;
 }
 
 .contacts__item:nth-child(2) {
     margin: 10px 0;
+}
+
+.contacts__link {
+    text-decoration: none;
+    color: #040B14;
+    font-weight: 300;
+}
+
+.contacts__title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.skills {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.skills__title {
+    font-weight: 500;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__item {
+    flex: 1 1 200px;
+}
+
+.skills__item + .skills__item {
+    margin-left: 20px;
+}
+
+.skills__mastery {
+    height: 30px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.skills__mastery-complete {
+    background-color: #4D698F;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.skills__item:nth-child(1)  .skills__mastery-complete{
+    width: 80%;
+}
+
+.skills__item:nth-child(2)  .skills__mastery-complete{
+    width: 85%;
+}
+.skills__item:nth-child(3)  .skills__mastery-complete{
+    width: 65%;
+}
+.skills__item:nth-child(4)  .skills__mastery-complete{
+    width: 45%;
+}
+.skills__item:nth-child(5)  .skills__mastery-complete{
+    width: 80%;
+}
+
+.code-example__description {
+    font-weight: 300;
+    padding: 20px;
+}
+
+.code-example__description-item {
+    padding-bottom: 10px;
+}
+
+.code-example__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-example__code {
+    display: flex;
+    width: fit-content;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 22px;
+    background-color: rgba(95, 115, 143, 0.9);
+    border-radius: 4px;
 }
