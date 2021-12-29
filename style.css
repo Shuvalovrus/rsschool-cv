@@ -242,3 +242,47 @@ body {
 .experience__item-title {
     margin-right: 10px;
 }
+
+.courses {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.courses__title {
+    padding: 0;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.courses__date {
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.courses__description {
+    font-weight: 300;
+
+}
+
+.courses__item {
+    margin-bottom: 35px;
+}
+
+.courses__link {
+    text-decoration: none;
+}
+
+.languages__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages__item {
+    flex: 0 1 45%;
+}
+
+.languages {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
