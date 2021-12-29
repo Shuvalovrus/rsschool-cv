@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-title {
+
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 15px;
+}
+
+.navbar__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #0c141f;
+    transition: .2s;
+}
+
+.navbar__link:hover {
+    opacity: .7;
+}
+
+.about {
+    border-bottom: 1px solid #cccccc;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__photo {
+
+}
+
+.about__text {
+    max-width: 600px;
+    line-height: 22px;
+}
+
+.contacts {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contacts__item:nth-child(2) {
+    margin: 10px 0;
 }
