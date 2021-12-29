@@ -20,13 +20,19 @@ body {
     color: #0D1117;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
 .header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid #cccccc;
     background-color: #fff;
 }
 
@@ -288,7 +294,7 @@ body {
 }
 
 .footer {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #efefef;
 }
 
