@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>CV | Konstantin Shuvalov</title>
@@ -99,14 +97,14 @@
                     <pre class="code-example__code">
 1.
                     function isPrime (num) {
-                        if (num < 2) {
+                        if (num &lt; 2) {
                             return false;
                         }
                         if (num === 2) {
                             return true;
                         }
                         const s = Math.sqrt(num) + 1;
-                        for (let i = 2; i < s; i++) {
+                        for (let i = 2; i &lt; s; i++) {
                             if (num % i === 0) {
                                 return false;
                             }
@@ -118,8 +116,8 @@
 2.
                     function fakeBin(x) {
                       let resultArr = [];
-                      for (let i = 0; i < x.length; i++) {
-                          if (x[i] < 5) {
+                      for (let i = 0; i &lt; x.length; i++) {
+                          if (x[i] &lt; 5) {
                             resultArr.push(0);
                           } else {
                             resultArr.push(1);
@@ -132,8 +130,8 @@
 3.
                     function fakeBin(x) {
                       let resultArr = [];
-                      for (let i = 0; i < x.length; i++) {
-                          if (x[i] < 5) {
+                      for (let i = 0; i &lt; x.length; i++) {
+                          if (x[i] &lt; 5) {
                             resultArr.push(0);
                           } else {
                             resultArr.push(1);
