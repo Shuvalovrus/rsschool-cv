@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -34,6 +34,13 @@ body {
     width: 100%;
     z-index: 1000;
     background-color: #fff;
+}
+
+.header__subtitle {
+    position: absolute;
+    padding-left: 2px;
+    top: 54px;
+    opacity: 0.8;
 }
 
 .header__container {
@@ -82,14 +89,32 @@ body {
     top: -40px;
 }
 .about__text {
+    font-weight: 400;
     padding: 0;
     margin: 0;
     max-width: 600px;
     line-height: 22px;
-    font-weight: 300;
     color: #0D1117;
+    font-family: 'Roboto', sans-serif;
 }
 
+.about__languages {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about__languages-item + .about__languages-item {
+    margin-left: 10px;
+}
+
+.about__languages-item:nth-child(1) {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
 
 .contacts {
     padding: 0;
@@ -176,12 +201,13 @@ body {
 }
 
 .code-example__description {
-    font-weight: 300;
     padding: 20px;
 }
 
 .code-example__description-item {
     padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .code-example__wrapper {
@@ -228,6 +254,7 @@ body {
 .experience__item:hover {
     top: -1px;
     left: -1px;
+    color: #fff;
 }
 
 .experience__item-link {
@@ -241,8 +268,8 @@ body {
     opacity: 0;
 }
 
-.experience__item:nth-child(1) {
-    background-color: blueviolet;
+.experience__item{
+    background-color: rgba(95, 115, 143, 0.9);
 }
 
 .experience__item-title {
