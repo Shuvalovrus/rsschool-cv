@@ -2,12 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CV | Konstantin Shuvalov</title>
 </head>
 <body>
-
+    <header class="header">
+        <div class="header__container container">
+            <h1 class="header__title">Konstantin Shuvalov</h1>
+            <span class="header__subtitle">Frontend Developer</span>
+            <nav class="header__navbar">
+                <ul class="navbar">
+                    <li class="navbar__item"><a class="navbar__link" href="#about">ABOUT ME</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#skills">SKILLS</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#example">EXAMPLE CODE</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#experience">WORK EXPERIENCE</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#courses">COURSES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <a class="anchor" id="about" href="#"></a>
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">ABOUT ME</h2>
+                <span class="languages__title">Languages</span>
+                <ul class="about__languages">
+                    <li class="about__languages-item">English: intermediate</li>
+                    <li class="about__languages-item">Russian: Native</li>
+                </ul>
+                <div class="about__content">
+                    <div class="about__contacts">
+                        <span class="contacts__title">CONTACTS:</span>
+                        <ul class="contacts">
+                            <li class="contacts__item">Phone: <a class="contacts__link" href="tel:+79879016168">+7 987 901 6168</a> </li>
+                            <li class="contacts__item">Mail: <a class="contacts__link" href="mailto:shuvalov.2021@list.ru">shuvalov.2021@list.ru</a></li>
+                            <li class="contacts__item">Telegram: <a class="contacts__link" href="https://tlgg.ru/@knstnyin">@knstnyin</a></li>
+                        </ul>
+                    </div>
+                    <p class="about__text">
+                        I started my acquaintance with frontend development in 2020, in a course from RS school,
+                        since then I'm actively studying web development technologies.
+                        I'm very interested in learning how to create modern web applications using current technologies,
+                        my plan for 2022 is to improve my knowledge and get a job as a frontend developer.
+                    </p>
+                    <img class="about__photo" src="./avatar.png" alt="Avatar" width="256" height="256">
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="skills" href="#"></a>
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">SKILLS</h2>
+                <div class="skills__container">
+                    <div class="skills__item">
+                        <h3 class="skills__title">HTML5</h3>
+                        <div class="skills__mastery">
+                            <div class="skills__mastery-complete"></div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__title">CSS3</h3>
+                        <div class="skills__mastery">
+                            <div class="skills__mastery-complete"></div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__title">JavaScript</h3>
+                        <div class="skills__mastery">
+                            <div class="skills__mastery-complete"></div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__title">React</h3>
+                        <div class="skills__mastery">
+                            <div class="skills__mastery-complete"></div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <h3 class="skills__title">Git</h3>
+                        <div class="skills__mastery">
+                            <div class="skills__mastery-complete"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="example" href="#"></a>
+        <section class="code-example">
+            <div class="container">
+                <h2 class="section-title">CODE EXAMPLE</h2>
+                <ol class="code-example__description">
+                    <li class="code-example__description-item">Define a function that takes one integer argument and returns logical value true or false depending on if the integer is a prime.</li>
+                    <li class="code-example__description-item">Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.</li>
+                    <li class="code-example__description-item">Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).</li>
+                </ol>
+                <div class="code-example__wrapper">
+                    <pre class="code-example__code">
+1.
+                    function isPrime (num) {
+                        if (num &lt; 2) {
+                            return false;
+                        }
+                        if (num === 2) {
+                            return true;
+                        }
+                        const s = Math.sqrt(num) + 1;
+                        for (let i = 2; i &lt; s; i++) {
+                            if (num % i === 0) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    };
+                    </pre>
+                    <pre class="code-example__code">
+2.
+                    function fakeBin(x) {
+                      let resultArr = [];
+                      for (let i = 0; i &lt; x.length; i++) {
+                          if (x[i] &lt; 5) {
+                            resultArr.push(0);
+                          } else {
+                            resultArr.push(1);
+                          }
+                        }
+                      return resultArr.join('');
+                    };
+                    </pre>
+                    <pre class="code-example__code">
+3.
+                    function fakeBin(x) {
+                      let resultArr = [];
+                      for (let i = 0; i &lt; x.length; i++) {
+                          if (x[i] &lt; 5) {
+                            resultArr.push(0);
+                          } else {
+                            resultArr.push(1);
+                          }
+                        }
+                      return resultArr.join('');
+                    };
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="experience" href="#"></a>
+        <section class="experience">
+            <div class="container">
+                <h2 class="section-title">WORK EXPERIENCE</h2>
+                <div class="experience__content">
+                    <div class="experience__item">
+                        <h3 class="experience__item-title">CryptoCap</h3>
+                        <p class="experience__item-description">website</p>
+                        <a class="experience__item-link" href="https://github.com/Shuvalovrus/CryptoCap">website CryptoCap</a>
+                    </div>
+                    <div class="experience__item">
+                        <h3 class="experience__item-title">In development</h3>
+                        <p class="experience__item-description"></p>
+                        <a class="experience__item-link" href="#">w</a>
+                    </div>
+                    <div class="experience__item">
+                        <h3 class="experience__item-title">In development</h3>
+                        <p class="experience__item-description"></p>
+                        <a class="experience__item-link" href="#">w</a>
+                    </div>
+                    <div class="experience__item">
+                        <h3 class="experience__item-title">In development</h3>
+                        <p class="experience__item-description"></p>
+                        <a class="experience__item-link" href="#">w</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="courses" href="#"></a>
+        <section class="courses">
+            <div class="container">
+                <h2 class="section-title">Courses</h2>
+                <div class="courses__item">
+                    <h3 class="courses__title">Frontend Development / Innopolis University</h3>
+                    <span class="courses__date">25.10-15.12.2021</span>
+                    <p class="courses__description">Gaining the competence necessary to perform a new type of professional activity - software development; acquiring a new qualification - junior frontend developer.</p>
+                    <a class="courses__link" href="#">Course link</a>
+                    <hr>
+                </div>
+                <div class="courses__item">
+                    <h3 class="courses__title">JavaScript/Front-end. Stage 0 / Rs School</h3>
+                    <span class="courses__date">13.12.2021-Present</span>
+                    <p class="courses__description">A free course from The Rolling Scopes community for those who are unfamiliar or unfamiliar with programming, but would like to further learn from the basic "JavaScript/Front-end" course.</p>
+                    <a class="courses__link" href="#">Course link</a>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a href="https://github.com/Shuvalovrus"><img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" alt=""/></a>
+            <span class="footer__year">2021</span>
+            <a href="https://rs.school/js/"><img src="./course_logo.svg" alt=""  width="100"></a>
+        </div>
+    </footer>
 </body>
 </html>
