@@ -306,20 +306,6 @@ body {
     text-decoration: none;
 }
 
-.languages__content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.languages__item {
-    flex: 0 1 45%;
-}
-
-.languages {
-    padding-bottom: 50px;
-    border-top: 1px solid #e3e3e3;
-}
-
 .footer {
     padding: 20px 0;
     background-color: #efefef;
