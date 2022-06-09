@@ -387,3 +387,16 @@ body {
     color: var(--link-color);
 }
 /* /ITEM-COURSES */
+
+/* FOOTER */
+.footer {
+    padding: 20px 0;
+    background-color: #efefef;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* /FOOTER */
