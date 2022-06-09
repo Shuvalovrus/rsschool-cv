@@ -390,8 +390,12 @@ body {
 
 .item-courses__link {
     color: var(--link-color);
+    transition: color .3s ease 0s;
 }
-/* /ITEM-COURSES */
+.item-courses__link:hover {
+    color: var(--hover-link-color);
+}
+    /* /ITEM-COURSES */
 
 /* FOOTER */
 .footer {
