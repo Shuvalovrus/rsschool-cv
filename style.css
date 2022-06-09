@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body {
     padding-top: 80px;
     font-family: var(--main-font);
+    counter-reset: section;
 }
 [class*="__container"] {
     max-width: 1110px;
@@ -275,6 +276,7 @@ body {
 
 /* EXAMPLE */
 .example {
+    position: relative;
     display: flex;
     align-items: flex-start;
     flex: 0 1 300px;
@@ -282,6 +284,13 @@ body {
     background-color: #eaeaea;
     border-radius: 5px;
     box-shadow: 2px 3px 5px #bfbebe;
+}
+.example::after {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    content: counters(section,".");
+    counter-increment: section;
 }
 
 .example__code {
