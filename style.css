@@ -208,6 +208,8 @@ body {
 /* /SKILLS */
 
 /* SKILL */
+.skill {
+}
 .skill__title {
     margin-bottom: 5px;
     font-size: var(--h3-fs);
@@ -217,9 +219,10 @@ body {
     height: 20px;
     background-color: #bfbebe;
     border-radius: 5px;
+    box-shadow: 1px 2px 3px 1px #dfdfdf;
 }
 .skill__mastery-complete {
-    background-color: #646363;
+    background-color: #a39e9e;
     height: 100%;
     border-radius: 5px 0 0 5px;
 }
@@ -239,3 +242,44 @@ body {
     width: 80%;
 }
 /* /SKILL */
+
+/* CODE-EXAMPLE */
+.code-example {
+    padding: 30px 0;
+}
+
+.code-example__container {
+}
+.code-example__title {
+}
+.code-example__description {
+    margin-bottom: 30px;
+}
+.code-example__description-item {
+
+}
+.code-example__description-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.code-example__examples {
+    display: flex;
+    justify-content: space-between;
+}
+.code-example__example {
+}
+/* /CODE-EXAMPLE */
+
+/* EXAMPLE */
+.example {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 300px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #bfbebe;
+}
+
+.example__code {
+}
+/* /EXAMPLE */
