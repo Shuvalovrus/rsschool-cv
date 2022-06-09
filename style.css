@@ -35,3 +35,72 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* /RESET */
+
+/* VARIABLES */
+:root {
+    --main-font: Arial, sans-serif;
+
+    --header-fs: 26px;
+    --nav-link-fs: 12px;
+
+    --nav-link-color: #000;
+}
+/* VARIABLES */
+
+/* COMMON */
+body {
+    font-family: var(--main-font);
+}
+
+[class*="__container"] {
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* /COMMON */
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 2px 1px rgb(210 210 210);
+}
+
+.header__container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-size: var(--header-fs);
+}
+.header__subtitle {
+    position: absolute;
+    top: 55px;
+    left: 200px;
+    font-size: 13px;
+}
+/* /HEADER */
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar__link {
+    font-size: var(--nav-link-fs);
+    color: var(--nav-link-color);
+    transition: opacity .3s ease 0s;
+}
+.navbar__link:hover {
+    opacity: .8;
+}
+/* /NAVBAR */
