@@ -322,19 +322,19 @@ body {
     color: #3c3a3a;
 }
 .item-experience:nth-child(1) {
-    background: url("/img/lecorte.webp") center center no-repeat;
+    background: url("./img/lecorte.webp") center center no-repeat;
     background-size: cover;
 }
 .item-experience:nth-child(2) {
-    background: url("/img/novik.webp") center center no-repeat;
+    background: url("./img/novik.webp") center center no-repeat;
     background-size: cover;
 }
 .item-experience:nth-child(3) {
-    background: url("/img/cryptocup.webp") center center no-repeat;
+    background: url("./img/cryptocup.webp") center center no-repeat;
     background-size: cover;
 }
 .item-experience:nth-child(4) {
-    background: url("/img/gocorona.webp") center center no-repeat;
+    background: url("./img/gocorona.webp") center center no-repeat;
     background-size: cover;
 }
 /* /ITEM-EXPERIENCE */
