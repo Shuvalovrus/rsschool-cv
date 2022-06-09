@@ -196,17 +196,20 @@ body {
 .skills__title {
     margin-bottom: 40px;
 }
-.skills__item-wrapper {
+.skills__item-list {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 .skills__item {
-    flex: 1 1 200px;
+    flex: 0 1 200px;
 }
 /* /SKILLS */
 
 /* SKILL */
+.skill {
+    width: 100%;
+}
 .skill__title {
     margin-bottom: 5px;
     font-size: var(--h3-fs);
