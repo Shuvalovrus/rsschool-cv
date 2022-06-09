@@ -129,6 +129,7 @@ body {
     padding: 30px 0 0 0 ;
 }
 .about__container {
+    position: relative;
 }
 .about__title {}
 .section-title {}
@@ -169,8 +170,8 @@ body {
 /* CONTACTS */
 .contacts {
     position: absolute;
-    top: 85px;
-    right: 15px;
+    top: -30px;
+    right: 0;
 }
 .contacts__title {}
 .contacts__list {
