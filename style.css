@@ -88,7 +88,6 @@ body {
     background-color: #fff;
     z-index: 5;
 }
-
 .header__container {
     position: relative;
     height: 100%;
@@ -96,7 +95,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .header__title {
     font-size: var(--h1-fs);
 }
@@ -114,7 +112,6 @@ body {
     list-style: none;
     gap: 15px;
 }
-
 .navbar__link {
     font-size: var(--nav-link-fs);
     color: var(--nav-link-color);
@@ -148,7 +145,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.about__contacts {}
 /* /ABOUT */
 
 /* LANGUAGES */
@@ -178,8 +174,6 @@ body {
 .contacts__list {
     display: flex;
     gap: 5px;
-}
-.contacts__item {
 }
 .contacts__item:not(:last-child) {
     padding-right: 5px;
@@ -213,8 +207,6 @@ body {
 /* /SKILLS */
 
 /* SKILL */
-.skill {
-}
 .skill__title {
     margin-bottom: 5px;
     font-size: var(--h3-fs);
@@ -252,16 +244,8 @@ body {
 .code-example {
     padding: 30px 0;
 }
-
-.code-example__container {
-}
-.code-example__title {
-}
 .code-example__description {
     margin-bottom: 30px;
-}
-.code-example__description-item {
-
 }
 .code-example__description-item:not(:last-child) {
     margin-bottom: 10px;
@@ -269,8 +253,6 @@ body {
 .code-example__examples {
     display: flex;
     justify-content: space-between;
-}
-.code-example__example {
 }
 /* /CODE-EXAMPLE */
 
@@ -292,9 +274,6 @@ body {
     content: counters(section,".");
     counter-increment: section;
 }
-
-.example__code {
-}
 /* /EXAMPLE */
 
 /* EXPERIENCE */
@@ -302,20 +281,14 @@ body {
     padding: 50px 0;
     margin-bottom: 90px;
 }
-
-.experience__container {
-}
-
 .experience__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .experience__item {
     flex: 0 1 50%;
 }
-
 /* /EXPERIENCE */
 
 /* ITEM-EXPERIENCE */
@@ -364,16 +337,9 @@ body {
 /* /ITEM-EXPERIENCE */
 
 /* COURSES */
-.courses {
-}
-
-.courses__container {
-}
-
 .courses__item {
     margin-bottom: 35px;
 }
-
 /* /COURSES */
 
 /* ITEM-COURSES */
@@ -385,18 +351,13 @@ body {
 .item-courses:not(:last-child) {
     border-bottom: 1px solid #cbcbcb;
 }
-.item-courses__title {
-}
-
 .item-courses__date {
     opacity: 0.8;
     margin-bottom: 10px;
 }
-
 .item-courses__description {
     margin-bottom: 5px;
 }
-
 .item-courses__link {
     color: var(--link-color);
     transition: color .3s ease 0s;
@@ -404,7 +365,7 @@ body {
 .item-courses__link:hover {
     color: var(--hover-link-color);
 }
-    /* /ITEM-COURSES */
+/* /ITEM-COURSES */
 
 /* FOOTER */
 .footer {
