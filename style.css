@@ -40,22 +40,39 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 :root {
     --main-font: Arial, sans-serif;
 
-    --header-fs: 26px;
-    --nav-link-fs: 12px;
+    --font-weight-bold: 700;
+    --font-weight-medium: 400;
+
+    --h1-fs: 26px;
+    --h2-fs: 22px;
+    --h3-fs: 18px;
+    --nav-link-fs: 16px;
+    --link-fs: 12px;
 
     --nav-link-color: #000;
+    --link-color: #757272;
+    --hover-link-color: #3c3a3a;
 }
 /* VARIABLES */
 
 /* COMMON */
 body {
+    padding-top: 80px;
     font-family: var(--main-font);
 }
-
 [class*="__container"] {
     max-width: 1110px;
     padding: 0 15px;
     margin: 0 auto;
+}
+.section-title {
+    margin-bottom: 15px;
+    font-size: var(--h2-fs);
+    text-transform: uppercase;
+}
+.sub-section-title {
+    font-size: var(--h3-fs);
+    margin-bottom: 10px;
 }
 /* /COMMON */
 
@@ -78,7 +95,7 @@ body {
 }
 
 .header__title {
-    font-size: var(--header-fs);
+    font-size: var(--h1-fs);
 }
 .header__subtitle {
     position: absolute;
@@ -104,3 +121,72 @@ body {
     opacity: .8;
 }
 /* /NAVBAR */
+
+/* ABOUT */
+.about {
+    padding: 30px 0;
+}
+.about__container {
+}
+.about__title {}
+.section-title {}
+.about__languages {}
+.about__text {
+    line-height: 1.4;
+}
+.about__photo {
+    position: relative;
+    top: -100px;
+    right: 0;
+}
+.about__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.about__contacts {}
+/* /ABOUT */
+
+/* LANGUAGES */
+.languages {
+    margin-bottom: 30px;
+}
+.languages__title {
+}
+.languages__list {
+    display: flex;
+    gap: 10px;
+}
+.languages__item {}
+.languages__item:nth-child(1) {
+    padding-right: 10px;
+    border-right: 1px solid #464545;
+}
+/* /LANGUAGES */
+
+/* CONTACTS */
+.contacts {
+    position: absolute;
+    top: 85px;
+    right: 15px;
+}
+.contacts__title {}
+.contacts__list {
+    display: flex;
+    gap: 5px;
+}
+.contacts__item {
+}
+.contacts__item:not(:last-child) {
+    padding-right: 5px;
+    border-right: 1px solid var(--link-color);
+}
+.contacts__link {
+    font-size: var(--link-fs);
+    color: var(--link-color);
+    transition: color .3s ease 0s;
+}
+.contacts__link:hover {
+    color: var(--hover-link-color);
+}
+/* /CONTACTS */
