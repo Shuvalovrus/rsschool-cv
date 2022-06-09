@@ -348,3 +348,42 @@ body {
     background-size: cover;
 }
 /* /ITEM-EXPERIENCE */
+
+/* COURSES */
+.courses {
+}
+
+.courses__container {
+}
+
+.courses__item {
+    margin-bottom: 35px;
+}
+
+/* /COURSES */
+
+/* ITEM-COURSES */
+.item-courses {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.item-courses:not(:last-child) {
+    border-bottom: 1px solid #cbcbcb;
+}
+.item-courses__title {
+}
+
+.item-courses__date {
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.item-courses__description {
+    margin-bottom: 5px;
+}
+
+.item-courses__link {
+    color: var(--link-color);
+}
+/* /ITEM-COURSES */
