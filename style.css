@@ -283,3 +283,68 @@ body {
 .example__code {
 }
 /* /EXAMPLE */
+
+/* EXPERIENCE */
+.experience {
+    padding: 50px 0;
+}
+
+.experience__container {
+}
+
+.experience__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experience__item {
+    flex: 0 1 50%;
+}
+
+/* /EXPERIENCE */
+
+/* ITEM-EXPERIENCE */
+.item-experience {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.item-experience__content {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eded;
+    transition: bottom .3s ease 0s;
+}
+.item-experience:hover .item-experience__content {
+    bottom: 0;
+}
+.item-experience__link {
+    text-transform: uppercase;
+    color: #3c3a3a;
+}
+.item-experience:nth-child(1) {
+    background: url("/img/lecorte.webp") center center no-repeat;
+    background-size: cover;
+}
+.item-experience:nth-child(2) {
+    background: url("/img/novik.webp") center center no-repeat;
+    background-size: cover;
+}
+.item-experience:nth-child(3) {
+    background: url("/img/cryptocup.webp") center center no-repeat;
+    background-size: cover;
+}
+.item-experience:nth-child(4) {
+    background: url("/img/gocorona.webp") center center no-repeat;
+    background-size: cover;
+}
+/* /ITEM-EXPERIENCE */
