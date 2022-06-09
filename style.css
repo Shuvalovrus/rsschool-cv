@@ -196,6 +196,7 @@ body {
 
 /* SKILLS */
 .skills {
+    margin-bottom: 50px;
 }
 .skills__title {
     margin-bottom: 40px;
@@ -290,6 +291,7 @@ body {
 /* EXPERIENCE */
 .experience {
     padding: 50px 0;
+    margin-bottom: 90px;
 }
 
 .experience__container {
