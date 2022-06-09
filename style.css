@@ -124,7 +124,7 @@ body {
 
 /* ABOUT */
 .about {
-    padding: 30px 0;
+    padding: 30px 0 0 0 ;
 }
 .about__container {
 }
@@ -190,3 +190,52 @@ body {
     color: var(--hover-link-color);
 }
 /* /CONTACTS */
+
+/* SKILLS */
+.skills {
+}
+.skills__title {
+    margin-bottom: 40px;
+}
+.skills__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skills__item {
+    flex: 1 1 200px;
+}
+/* /SKILLS */
+
+/* SKILL */
+.skill__title {
+    margin-bottom: 5px;
+    font-size: var(--h3-fs);
+    text-align: center;
+}
+.skill__mastery {
+    height: 20px;
+    background-color: #bfbebe;
+    border-radius: 5px;
+}
+.skill__mastery-complete {
+    background-color: #646363;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+.skill:nth-child(1)  .skill__mastery-complete{
+    width: 80%;
+}
+.skill:nth-child(2)  .skill__mastery-complete{
+    width: 85%;
+}
+.skill:nth-child(3)  .skill__mastery-complete{
+    width: 65%;
+}
+.skill:nth-child(4)  .skill__mastery-complete{
+    width: 45%;
+}
+.skill:nth-child(5)  .skill__mastery-complete{
+    width: 80%;
+}
+/* /SKILL */
