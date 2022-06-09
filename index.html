@@ -88,6 +88,91 @@
                 </div>
             </div>
         </section>
+        <section class="code-example">
+            <div class="code-example__container">
+                <h2 class="code-example__title section-title">CODE EXAMPLE</h2>
+                <ul class="code-example__description">
+                    <li class="code-example__description-item">Define a function that takes one integer argument and returns logical value true or false depending on if the integer is a prime.</li>
+                    <li class="code-example__description-item">Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.</li>
+                    <li class="code-example__description-item">Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).</li>
+                </ul>
+                <div class="code-example__examples">
+                    <div class="code-example__example example">
+                         <pre class="example__code">
+ function isPrime (num) {
+
+    if (num &lt; 2) {
+
+        return false;
+
+    } else if (num === 2) {
+
+        return true;
+
+    }
+
+    const s = Math.sqrt(num) + 1;
+
+    for (let i = 2; i &lt; s; i++) {
+
+        if (num % i === 0) {
+
+            return false;
+
+        }
+    }
+
+    return true;
+};
+                        </pre>
+                    </div>
+                    <div class="code-example__example example">
+                        <pre>
+function fakeBin(x) {
+
+    let resultArr = [];
+
+    for (let i = 0; i &lt; x.length; i++) {
+
+        if (x[i] &lt; 5) {
+
+            resultArr.push(0);
+
+        } else {
+
+            resultArr.push(1);
+        }
+    }
+
+    return resultArr.join('');
+};
+                        </pre>
+                    </div>
+                    <div class="code-example__example example">
+                        <pre>
+function fakeBin(x) {
+
+    let resultArr = [];
+
+    for (let i = 0; i &lt; x.length; i++) {
+
+        if (x[i] &lt; 5) {
+
+            resultArr.push(0);
+
+        } else {
+
+            resultArr.push(1);
+        }
+    }
+
+    return resultArr.join('');
+};
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
